@@ -26,18 +26,44 @@
 // For Loops
 
 // printing hello world 10 times
-const world = "Hello World ";
 
-for (i = 0; i < 10; i++) {
-  console.log(world, i);
-}
+// const world = "Hello World ";
+
+// for (i = 0; i < 10; i++) {
+//   console.log(world, i);
+// }
 
 // initiating multiple expression in for loop
 
-for (i = 0, j = 9; i < 10, j > 0; i++, j--) {
-  console.log(i, j);
-  console.log(`${i}${j}`);
-}
+// for (i = 0, j = 9; i < 10, j > 0; i++, j--) {
+//   console.log(i, j);
+//   console.log(`${i}${j}`);
+// }
+
+// While loops
+// let index = 0;
+
+// while (index < 10) {
+//   console.log(`The number of index is ${index}`);
+//   index;
+// }
+// let i = 1;
+// while (i <= 10) {
+//   console.log(i);
+//   i++;
+// }
+
+// let j = 1;
+// while (j <= 10) {
+//   console.log(`hello world ${j}`);
+//   j++;
+// }
+
+// k = 1;
+// do {
+//   console.log(k);
+//   k++;
+// } while (k < 10);
 
 // const fruits = ["apple", "banana", "orange", "mango", "pear"];
 // const vegetabkes = ["cauli", "brocoli", "peas", "cabbage", "potato"];
@@ -57,3 +83,126 @@ for (i = 0, j = 9; i < 10, j > 0; i++, j--) {
 // const fruitVegeMeat = fruits.concat(vegetabkes, meat);
 // console.log(fruitAndVegies);
 // console.log(fruitVegeMeat);
+
+// const fruits = [
+//   "watermelon",
+//   "papaya",
+//   "apple",
+//   "banana",
+//   "orange",
+//   "mango",
+//   "pear",
+// ];
+
+// fruits.push("watermelon");
+
+// fruits.unshift("watermelon");
+
+// console.log(fruits);
+
+// console.log(fruits.pop());
+// console.log(fruits);
+
+// fruits.shift();
+// console.log(fruits);
+
+// const fruitAndVege = fruits.concat(vegetables, meat);
+// console.log(fruitAndVege);
+
+// const slicedArray = fruits.slice(2, 5);
+// console.log(slicedArray);
+
+// const splicedArray = fruits.splice(2, 3);
+// console.log(splicedArray);
+// console.log(fruits);
+
+// sorting with sort()
+
+// fruits.sort();
+// console.log(sortedArray);
+
+// sorting with toSorted()
+// const sortedArray = fruits.toSorted();
+// console.log(sortedArray);
+
+// fruits.reverse();
+// console.log(fruits);
+
+// const reveredArray = fruits.toReversed();
+// console.log(reveredArray);
+
+// const decendedArray = fruits.toSorted().toReversed();
+// console.log(decendedArray);
+
+// const numbers = [2, 10, 5, 8, 9, 26, 6, 35, 98, 42, 58, 75];
+// numbers.sort((a, b) => a - b);
+// console.log(numbers);
+
+// for of loop
+
+// const fruits = [
+//   "watermelon",
+//   "papaya",
+//   "apple",
+//   "banana",
+//   "orange",
+//   "mango",
+//   "pear",
+// ];
+
+// console.log(fruits);
+
+// const newArray = [];
+
+// for (const fruit of fruits) {
+//   const result = newArray.push(fruit.toUpperCase());
+
+//   console.log(fruit);
+// }
+
+// console.log(newArray);
+
+// const numbers = [10, 20, 30, 40, 50];
+
+// for (const number of numbers) {
+//   console.log(number);
+// }
+// console.log(numbers);
+
+/* ======= Challenge 1- Find the squares of [1,3,5,7,9,
+ 11,15,19,25] using for of loop */
+
+/* const numbers = [1, 3, 5, 7, 9, 11, 15, 19, 25];
+
+for (const number of numbers) {
+  const square = number * number;
+  console.log(square);
+}             */
+
+/* =========== Challenge 2- Find the highest salary of an
+office where salary list is [25000, 35000, 15000, 36000,
+28000, 75000, 50000] using for of loop */
+
+/* const salaries = [25000, 35000, 15000, 36000, 28000, 75000, 50000];
+
+let highestSalary = 0;
+for (const salary of salaries) {
+  if (highestSalary < salary) {
+    highestSalary = salary;
+  }
+}
+console.log(highestSalary);             */
+
+/* ============= Challenge 3- Find the sum of weight of all the people 
+going inside a lift for safety purpose. The weights are [75, 60, 45,55,
+59,89,75,96,50,60] */
+
+const weights = [75, 60, 45, 55, 59, 89, 75, 96, 50, 60];
+
+let totalWeight = 0;
+
+for (const weight of weights) {
+  totalWeight = weight + totalWeight;
+  // totalWeight += weight
+}
+console.log(totalWeight);
