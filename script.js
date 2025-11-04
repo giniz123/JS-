@@ -172,6 +172,8 @@
 /* ======= Challenge 1- Find the squares of [1,3,5,7,9,
  11,15,19,25] using for of loop */
 
+//  =============== ANSWER ======================
+
 /* const numbers = [1, 3, 5, 7, 9, 11, 15, 19, 25];
 
 for (const number of numbers) {
@@ -182,6 +184,8 @@ for (const number of numbers) {
 /* =========== Challenge 2- Find the highest salary of an
 office where salary list is [25000, 35000, 15000, 36000,
 28000, 75000, 50000] using for of loop */
+
+//  =============== ANSWER ======================
 
 /* const salaries = [25000, 35000, 15000, 36000, 28000, 75000, 50000];
 
@@ -197,7 +201,9 @@ console.log(highestSalary);             */
 going inside a lift for safety purpose. The weights are [75, 60, 45,55,
 59,89,75,96,50,60] */
 
-const weights = [75, 60, 45, 55, 59, 89, 75, 96, 50, 60];
+//  =============== ANSWER ======================
+
+/* const weights = [75, 60, 45, 55, 59, 89, 75, 96, 50, 60];
 
 let totalWeight = 0;
 
@@ -205,4 +211,55 @@ for (const weight of weights) {
   totalWeight = weight + totalWeight;
   // totalWeight += weight
 }
-console.log(totalWeight);
+console.log(totalWeight); */
+
+// forEach()
+
+// const fruits = ["banana", "apple", "peach", "mango", "grapes"];
+
+// fruits.forEach((fruit, index) => {
+//   console.log(index, fruit);
+// });
+
+// const numbers = [10, 20, 30, 40, 50];
+
+// numbers.forEach((number, index) => {
+//   console.log(index, number);
+// });
+
+/* ============= Challenge 1- Greet every friends in the list with "Hello" 
+- ["Sita", "Ram", "Gita", "Shyam", "Krishna", "Raghav"] */
+
+//  =============== ANSWER ======================
+
+// const friends = ["Sita", "Ram", "Gita", "Shyam", "Krishna", "Raghav"];
+
+// friends.forEach((friend, index) => {
+//   console.log(`${index} Hello ${friend}`);
+// });
+
+/* ============= Challenge 2- Calculate discount amount(10%) on each items 
+[450, 300, 5000, 2500, 8500, 6800, 2300, 45000] */
+
+//  =============== ANSWER ======================
+
+/* const items = [450, 300, 5000, 2500, 8500, 6800, 2300, 45000];
+
+items.forEach((item) => {
+  const discount = item / 10;
+  const newItem = item - discount;
+  console.log(discount);
+}); */
+
+/* ============= Challenge 2- Print only even numbers from list [1, 2,
+3, 4 ,5 ,6, 7, 8, 9, 10, 11, 12] */
+
+//  =============== ANSWER ======================
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+numbers.forEach((number, index) => {
+  if (number % 2 === 0) {
+    console.log(number);
+  }
+});
