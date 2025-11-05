@@ -256,10 +256,85 @@ items.forEach((item) => {
 
 //  =============== ANSWER ======================
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
-numbers.forEach((number, index) => {
-  if (number % 2 === 0) {
-    console.log(number);
-  }
+// numbers.forEach((number, index) => {
+//   if (number % 2 === 0) {
+//     console.log(number);
+//   }
+// });
+
+// Map()
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// const doubled = numbers.map((number, index) => {
+//   return number * 2;
+// });
+
+// const doubled = numbers.map((number, index) => number * 2);
+
+// console.log(doubled);
+
+/* ================ Challenge -1 Put Rs. in front of all the prices
+[520, 250, 900, 150, 6000, 1000, 600, 8000, 70000, 16000] */
+
+/* ==================== ANSWER ========================== */
+
+// const prices = [520, 250, 900, 150, 6000, 1000, 600, 8000, 70000, 16000];
+
+// const rsPrices = prices.map((price, index) => `Rs. ${price}`);
+// console.log(rsPrices);
+
+/* ================ Challenge -2 Changing strings to uppercase ["javascript",
+"github", "laptop", "coding", "frontend", "backend", "react", "project",
+"developer"] */
+
+// const strings = [
+//   "javascript",
+//   "github",
+//   "laptop",
+//   "coding",
+//   "frontend",
+//   "backend",
+//   "react",
+//   "project",
+//   "developer",
+// ];
+
+// const newString = strings.map((string, index) => string.toUpperCase());
+
+// console.log(newString);
+
+/* ================ Challenge -3 Add .com to company name ["google", "microsoft",
+"apple", "samsung", "tiktok", "facebook", "twitter", "amazon", "netflix"]
+
+/* ==================== ANSWER ========================== */
+
+// const companies = [
+//   "google",
+//   "microsoft",
+//   "apple",
+//   "samsung",
+//   "tiktok",
+//   "facebook",
+//   "twitter",
+//   "amazon",
+//   "netflix",
+// ];
+
+// const newCompanies = companies.map((company, index) => `${company}.com`);
+// console.log(newCompanies);
+
+/* ================ Challenge -4 Find the price after 10% discount [520, 250,
+900, 150, 6000, 1000, 600, 8000, 70000, 16000] */
+
+/* ==================== ANSWER ========================== */
+
+const prices = [520, 250, 900, 150, 6000, 1000, 600, 8000, 70000, 16000];
+
+const discountedPrices = prices.map((price, index) => {
+  return (price = price - (price * 10) / 100);
 });
+
+console.log(discountedPrices);
