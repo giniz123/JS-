@@ -407,28 +407,80 @@ numbers [10, "hello", 5, "world", 0, "javascript", "react", 85, "php", 962,
 
 /* ==================== ANSWER ========================== */
 
-const mixArray = [
-  10,
-  "hello",
-  5,
-  "world",
-  0,
-  "javascript",
-  "react",
-  85,
-  "php",
-  962,
-  78,
-  "react",
-  56,
-  45,
-  "angular",
-];
+// const mixArray = [
+//   10,
+//   "hello",
+//   5,
+//   "world",
+//   0,
+//   "javascript",
+//   "react",
+//   85,
+//   "php",
+//   962,
+//   78,
+//   "react",
+//   56,
+//   45,
+//   "angular",
+// ];
 
-const numArray = mixArray.filter((item) => {
-  if (typeof item === "number") {
-    return true;
-  }
-});
+// const numArray = mixArray.filter((item) => {
+//   if (typeof item === "number") {
+//     return true;
+//   }
+// });
 
-console.log(numArray);
+// console.log(numArray);
+
+//  Reduce()
+
+// const moneys = [444, 350, 600, 15000, 1700, 42600];
+
+// const sum = moneys.reduce((acc, money) => {
+//   return acc + money;
+// }, 0);
+
+// console.log(sum);
+
+/* ================ Challenge -1 Multiply all numbers [2,3,4,5,6,7,8,9] */
+
+/* ==================== ANSWER ========================== */
+
+// const numbers = [2, 3, 4, 5, 6, 7, 8, 9];
+
+// const multiplied = numbers.reduce((acc, number) => {
+//   return acc * number;
+// }, 1);
+
+// console.log(multiplied);
+
+/* ================ Challenge -2 find the maximum numbers [33, 85, 12, 99, 56]
+-use ternary and tell later it must be in round bracket as well as we use
+a, b instead of acc, value for numbers */
+
+/* ==================== ANSWER ========================== */
+
+const numbers = [33, 85, 12, 99, 56];
+
+// const maxNumber = numbers.reduce(
+//   (acc, number) => (number > acc ? number : acc),
+//   0
+// );
+
+const maxNumber = numbers.reduce((acc, number) =>
+  acc > number ? acc : number
+);
+
+console.log(maxNumber);
+
+/* ================ Challenge -3 Join all the words into a sentence- ["I",
+"like", "Javascript"] */
+
+/* ==================== ANSWER ========================== */
+
+const words = ["I", "like", "Javascript"];
+
+const sentences = words.reduce((acc, word) => acc + " " + word);
+
+console.log(sentences);
