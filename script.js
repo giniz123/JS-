@@ -461,26 +461,44 @@ a, b instead of acc, value for numbers */
 
 /* ==================== ANSWER ========================== */
 
-const numbers = [33, 85, 12, 99, 56];
+// const numbers = [33, 85, 12, 99, 56];
 
-// const maxNumber = numbers.reduce(
-//   (acc, number) => (number > acc ? number : acc),
-//   0
+// // const maxNumber = numbers.reduce(
+// //   (acc, number) => (number > acc ? number : acc),
+// //   0
+// // );
+
+// const maxNumber = numbers.reduce((acc, number) =>
+//   acc > number ? acc : number
 // );
 
-const maxNumber = numbers.reduce((acc, number) =>
-  acc > number ? acc : number
-);
+// console.log(maxNumber);
 
-console.log(maxNumber);
+// /* ================ Challenge -3 Join all the words into a sentence- ["I",
+// "like", "Javascript"] */
 
-/* ================ Challenge -3 Join all the words into a sentence- ["I",
-"like", "Javascript"] */
+// /* ==================== ANSWER ========================== */
 
-/* ==================== ANSWER ========================== */
+// const words = ["I", "like", "Javascript"];
 
-const words = ["I", "like", "Javascript"];
+// const sentences = words.reduce((acc, word) => acc + " " + word);
 
-const sentences = words.reduce((acc, word) => acc + " " + word);
+// console.log(sentences);
 
-console.log(sentences);
+// Every()
+
+const fruits = ["apple", "banana", "orange", "mango"];
+
+const result = fruits.every((fruit, index) => {
+  return fruit.includes("a");
+});
+
+console.log(result);
+
+const numbers = [10, 12, 20, 30, 40, 45, 50];
+
+const output = numbers.every((number, index) => {
+  return number >= 10;
+});
+
+console.log(output);
