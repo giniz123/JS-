@@ -331,10 +331,104 @@ items.forEach((item) => {
 
 /* ==================== ANSWER ========================== */
 
-const prices = [520, 250, 900, 150, 6000, 1000, 600, 8000, 70000, 16000];
+// const prices = [520, 250, 900, 150, 6000, 1000, 600, 8000, 70000, 16000];
 
-const discountedPrices = prices.map((price, index) => {
-  return (price = price - (price * 10) / 100);
+// const discountedPrices = prices.map((price, index) => {
+//   return (price = price - (price * 10) / 100);
+// });
+
+// console.log(discountedPrices);
+
+// filter()
+
+/* ================ Challenge -1 Filter along with examination marks example
+[56,78,94,68,32,15,16,85,47,69,68,78,99,83,74,76,36,25,38,27,16,8,6] */
+
+/* ==================== ANSWER ========================== */
+
+// const marks = [
+//   56, 78, 94, 68, 32, 15, 16, 85, 47, 69, 68, 78, 99, 83, 74, 76, 36, 25, 38,
+//   27, 16, 8, 6,
+// ];
+
+// const passed = marks.filter(
+//   (mark, index) =>
+// if (mark >= 40) {
+//   return true;
+// }
+
+//     mark >= 40
+// );
+
+// const passed = marks.filter((mark, index) => mark >= 40);
+
+// console.log(passed);
+
+/* ================ Challenge -2 FInd all the even numbers from the list 
+[1,2,3,4,5,6,7,8,9,10] */
+
+/* ==================== ANSWER ========================== */
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// const even = numbers.filter((number, index) => number % 2 == 0);
+
+// console.log(even);
+
+/* ================ Challenge -2 Find the words that contains 'a' - 
+useful in search functionality - ["javascript", "react", "python", 
+"c++", "ruby", "rust", "cobol", "java", "php", "laravel", "angular"] */
+
+/* ==================== ANSWER ========================== */
+
+// const programmings = [
+//   "javascript",
+//   "react",
+//   "python",
+//   "c++",
+//   "ruby",
+//   "rust",
+//   "cobol",
+//   "java",
+//   "php",
+//   "laravel",
+//   "angular",
+// ];
+
+// const aContainingProgramming = programmings.filter((programming, index) =>
+//   programming.includes("a")
+// );
+
+// console.log(aContainingProgramming);
+
+/* ================ Challenge -3 remove all the strings while keeping all the
+numbers [10, "hello", 5, "world", 0, "javascript", "react", 85, "php", 962,
+78, "react", 56, 45, "angular"] */
+
+/* ==================== ANSWER ========================== */
+
+const mixArray = [
+  10,
+  "hello",
+  5,
+  "world",
+  0,
+  "javascript",
+  "react",
+  85,
+  "php",
+  962,
+  78,
+  "react",
+  56,
+  45,
+  "angular",
+];
+
+const numArray = mixArray.filter((item) => {
+  if (typeof item === "number") {
+    return true;
+  }
 });
 
-console.log(discountedPrices);
+console.log(numArray);
