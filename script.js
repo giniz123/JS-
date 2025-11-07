@@ -487,18 +487,90 @@ a, b instead of acc, value for numbers */
 
 // Every()
 
-const fruits = ["apple", "banana", "orange", "mango"];
+// const fruits = ["apple", "banana", "orange", "mango"];
 
-const result = fruits.every((fruit, index) => {
-  return fruit.includes("a");
-});
+// const result = fruits.every((fruit, index) => {
+//   return fruit.includes("a");
+// });
 
-console.log(result);
+// console.log(result);
 
-const numbers = [10, 12, 20, 30, 40, 45, 50];
+// const numbers = [10, 12, 20, 30, 40, 45, 50];
 
-const output = numbers.every((number, index) => {
-  return number >= 10;
-});
+// const output = numbers.every((number, index) => {
+//   return number >= 10;
+// });
 
-console.log(output);
+// console.log(output);
+
+// ========== Includes(), find(), indexOf()
+
+// const money = [300, 400, 250, 500, 555, 560, 6000];
+
+// const result = money.includes(300);
+
+// const result = money.find((amount, index) => amount === 560);
+
+// const result = money.indexOf(500);
+// console.log(result);
+
+/* ************************************************************** */
+
+// Challange #1
+// 1. create an array of 50 random numbers range between 1 and 100 programmatically
+// const array = [];
+// for (i = 0; i < 50; i++) {
+//   const result = Math.floor(Math.random() * 100) + 1;
+//   array.push(result);
+// }
+// console.log(array);
+
+//2. sort the array in descending order
+
+// array.sort((a, b) => b - a);
+// console.log(array);
+
+//3. get total of the array
+
+// const total = array.reduce((acc, num) => {
+//   return acc + num;
+// }, 0);
+
+// console.log(total);
+
+// 4.Divide original array in to 2 new arrays that contains even or odd numbers only each.
+
+// const evenArray = array.filter((num, index) => num % 2 === 0);
+// const oddArray = array.filter((num, index) => num % 2 !== 0);
+
+// 5. remove duplicate number for the original array
+
+// const newArray = [];
+// array.filter((num, index) => {
+//   if (!newArray.includes(num)) {
+//     return newArray.push(num);
+//   }
+// });
+
+// array.filter((num, index) => {
+//   if (newArray.indexOf(num) === -1) {
+//     return newArray.push(num);
+//   }
+// });
+
+// console.log(newArray);
+
+// const newArray = [...new Set(array)];
+// console.log(newArray);
+
+// Challange #2 create unique array 50 numbers range between 1 and 100 programmatically
+
+uniqueArray = [];
+for (i = 0; uniqueArray.length < 50; i++) {
+  const number = Math.floor(Math.random() * 100) + 1;
+  if (uniqueArray.indexOf(number) === -1) {
+    uniqueArray.push(number);
+  }
+}
+
+console.log(uniqueArray);
